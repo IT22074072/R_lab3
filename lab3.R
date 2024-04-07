@@ -64,3 +64,15 @@ abline(h=0)
 
 
 
+
+
+#Describe age with gender/accommodation
+
+#side by side boxplot
+boxplot(Age~Gender, main="Boxplot for Age by Gender", xlab="Gender", ylab="Age")
+boxplot(Age~Accommodation, main="Boxplot for Age by Accommodation", xlab="Accommodation", ylab="Age", outpch=18)
+
+
+
+
+
