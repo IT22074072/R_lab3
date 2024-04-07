@@ -40,3 +40,27 @@ abline(h=0)
 
 #boxplot
 boxplot(Age,main = "Boxplot for age",ylab="Age", outpch=8)
+
+
+
+
+
+#Bivariate Analysis
+#Two-way frequency table
+gender_acc.freq<-table(Gender, Accommodation)
+gender_acc.freq
+
+#stack bar chart
+barplot(gender_acc.freq, main = "Gender and accommodation", legend=row.names(gender_acc.freq))
+abline(h=0)
+
+#clustered bar charts
+barplot(gender_acc.freq,beside = TRUE, main = "Gender and accommodation", legend = row.names(gender_acc.freq))
+abline(h=0)
+
+
+
+
+
+
+
