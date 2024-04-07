@@ -69,10 +69,21 @@ abline(h=0)
 #Describe age with gender/accommodation
 
 #side by side boxplot
+#age with gender
 boxplot(Age~Gender, main="Boxplot for Age by Gender", xlab="Gender", ylab="Age")
+#age with accommodation
 boxplot(Age~Accommodation, main="Boxplot for Age by Accommodation", xlab="Accommodation", ylab="Age", outpch=18)
 
 
+
+
+
+
+
+
+
+#mean age for all the combinations of gender and accommodation
+xtabs(Age~Gender+Accommodation) / gender_acc.freq
 
 
 
